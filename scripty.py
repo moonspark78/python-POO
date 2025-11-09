@@ -1,5 +1,16 @@
-name = "Omar"
-age = 30
+class Dog: 
+    def __init__(self, name, breed): 
+        self.name = name 
+        self.breed = breed
+        
 
-print(type(name))
-print(type(age)
+    def bark(self): 
+        print("Woof!")
+
+dog1 = Dog("Buddy", "Golden Retriever")
+dog1.bark()
+print(dog1.name)
+print(dog1.breed)
+
+dog2 = Dog("Max", "Beagle")
+dog2.bark()

@@ -7,6 +7,12 @@ class Dog:
     def bark(self): 
         print("Woof!")
 
+class Onwer:
+    def __init__(self, name, adress, contact_number):
+        self.name = name
+        self.adress = adress
+        self.contact_number = contact_number
+
 dog1 = Dog("Buddy", "Golden Retriever")
 dog1.bark()
 print(dog1.name)

@@ -14,3 +14,5 @@ print(dog1.breed)
 
 dog2 = Dog("Max", "Beagle")
 dog2.bark()
+print(dog2.name)
+print(dog2.breed)

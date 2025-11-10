@@ -10,7 +10,7 @@ class Dog:
 
 class Owner:
     def __init__(self, name, adress, contact_number):
-        self.name = name
+        self.name = name #attribute
         self.adress = adress
         self.contact_number = contact_number
 
@@ -32,5 +32,8 @@ class Person:
     def greet(self):
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 
-person1 = Person("Alice", 30)
+person1 = Person("Alice", 30) # Creating an instance of Person class
 person1.greet()
+
+person3 = Person("Bob", 25)
+person3.greet()

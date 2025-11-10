@@ -17,8 +17,14 @@ class Owner:
 owner1 = Owner("John Doe", "123 Main St", "555-1234")
 
 dog1 = Dog("Buddy", "Golden Retriever", owner1)
-print(dog1.owner.name)
+#print(dog1.owner.name)
 
 owner2 = Owner("Jane Smith", "456 Elm St", "555-5678")
 dog2 = Dog("Max", "Beagle", owner2)
-print(dog2.owner.name)
+#print(dog2.owner.name)
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age

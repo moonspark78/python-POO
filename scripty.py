@@ -50,3 +50,9 @@ class User:
     
     def say_hello(self, user):
         print(f"Sending message to {user.username} : Hi {user.username}, it's {self.username}!")
+
+
+user1 = User("theo", "theo@gmail.com", "pass123")
+user2 = User("anna", "anna@gmail.com", "pass456")
+# Accessing attributes directly
+# print(user1.username)  # Output: theo

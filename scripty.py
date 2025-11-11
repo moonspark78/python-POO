@@ -41,6 +41,9 @@ person3 = Person("Bob", 25)
 
 
 """ Different ways to access data and modify it in object """
+# Accessing and Modifying Data
+# 1. The traditional way: make the data private and use getters ans setters
+
 
 class User:
     def __init__(self, username, email, password):

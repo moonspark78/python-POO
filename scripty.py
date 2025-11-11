@@ -33,7 +33,17 @@ class Person:
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 
 person1 = Person("Alice", 30) # Creating an instance of Person class
-person1.greet()
+# person1.greet()
 
 person3 = Person("Bob", 25)
-person3.greet()
+# person3.greet()
+
+
+
+""" Different ways to access data and modify it in object """
+
+class User:
+    def __init__(self, username, email, password):
+        self.username = username
+        self.email = email
+        self.password = password

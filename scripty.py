@@ -56,3 +56,5 @@ user1 = User("theo", "theo@gmail.com", "pass123")
 user2 = User("anna", "anna@gmail.com", "pass456")
 # Accessing attributes directly
 # print(user1.username)  # Output: theo
+
+user1.say_hello(user2)  # Output: Sending message to anna : Hi anna, it's theo!

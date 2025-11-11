@@ -57,4 +57,10 @@ user2 = User("anna", "anna@gmail.com", "pass456")
 # Accessing attributes directly
 # print(user1.username)  # Output: theo
 
-user1.say_hello(user2)  # Output: Sending message to anna : Hi anna, it's theo!
+#user1.say_hello(user2)  # Output: Sending message to anna : Hi anna, it's theo!
+
+print(user1.email)  
+user1.email = "new_email@gmail.com"
+print(user1.email)  
+
+""" MAIS ca c'est pas la bbonne facon de faire parce queje peut mettre un no-email adress """

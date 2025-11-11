@@ -47,3 +47,6 @@ class User:
         self.username = username
         self.email = email
         self.password = password
+    
+    def say_hello(self, user):
+        print(f"Sending message to {user.username} : Hi {user.username}, it's {self.username}!")

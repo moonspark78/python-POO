@@ -48,11 +48,12 @@ person3 = Person("Bob", 25)
 class User:
     def __init__(self, username, email, password):
         self.username = username
-        self.email = email
+        self._email = email
         self.password = password
     
-    def say_hello(self, user):
-        print(f"Sending message to {user.username} : Hi {user.username}, it's {self.username}!")
+    def get_email(self):
+        return self._email
+    
 
 
 user1 = User("theo", "theo@gmail.com", "pass123")

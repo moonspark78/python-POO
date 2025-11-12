@@ -56,6 +56,9 @@ class User:
     
     def clean_email(self):
         return self._email.lower().strip()
+    
+    def say_hello(self, other_user):
+        print(f"Sending message to {other_user.username} : Hi {other_user.username}, it's {self.username}!")
 
 
 user1 = User("theo", " Theo@gmail.com ", "pass123")
@@ -78,3 +81,6 @@ print(user1.clean_email())
 
 print(user2._email)
 print(user2.clean_email())
+
+
+print(user1.say_hello(user2))

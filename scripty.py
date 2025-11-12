@@ -54,17 +54,24 @@ class User:
     def get_email(self):
         return self._email
     
+    def clean_email(self):
+        return self._email.lower().strip()
 
 
-user1 = User("theo", "theo@gmail.com", "pass123")
+user1 = User("theo", " Theo@gmail.com ", "pass123")
 user2 = User("anna", "anna@gmail.com", "pass456")
+
+
 # Accessing attributes directly
 # print(user1.username)  # Output: theo
 
 #user1.say_hello(user2)  # Output: Sending message to anna : Hi anna, it's theo!
 
-print(user1.email)  
+""" print(user1.email)  
 user1.email = "new_email@gmail.com"
-print(user1.email)  
+print(user1.email)   """
 
 """ MAIS ca c'est pas la bbonne facon de faire parce queje peut mettre un no-email adress """
+
+print(user1._email)
+print(user1.clean_email())

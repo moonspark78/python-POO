@@ -59,7 +59,7 @@ class User:
 
 
 user1 = User("theo", " Theo@gmail.com ", "pass123")
-user2 = User("anna", "anna@gmail.com", "pass456")
+user2 = User("anna", " ana@gmail.com. ", "pass456")
 
 
 # Accessing attributes directly
@@ -75,3 +75,6 @@ print(user1.email)   """
 
 print(user1._email)
 print(user1.clean_email())
+
+print(user2._email)
+print(user2.clean_email())

@@ -48,34 +48,10 @@ person3 = Person("Bob", 25)
 class User:
     def __init__(self, username, email, password):
         self.username = username
-        self.__email = email
+        self._email = email
         self.password = password
     
-    def get_email(self):
-        return self._email
-    
-    def clean_email(self):
-        return self.__email.lower().strip()
-    
-    def say_hello(self, other_user):
-        print(f"Sending message to {other_user.username} : Hi {other_user.username}, it's {self.username}!")
 
 
 user1 = User("theo", " Theo@gmail.com ", "pass123")
-user2 = User("anna", " ana@gmail.com. ", "pass456")
-
-
-# Accessing attributes directly
-# print(user1.username)  # Output: theo
-
-#user1.say_hello(user2)  # Output: Sending message to anna : Hi anna, it's theo!
-
-""" print(user1.email)  
-user1.email = "new_email@gmail.com"
-print(user1.email)   """
-
-""" MAIS ca c'est pas la bbonne facon de faire parce queje peut mettre un no-email adress """
-
-print(user1.__email)
-print(user1.clean_email())
 

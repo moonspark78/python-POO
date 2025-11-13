@@ -54,10 +54,15 @@ class User:
     def get_email(self):
         return self._email
     
-    
+    def set_email(self, new_email):
+        self._email = new_email
+
 
 
 
 user1 = User("theo", "theo@gmail.com", "pass123")
 print(user1.get_email())  # Accessing email using getter method
+
+user1.set_email("new_theo@gmail.com")  # Modifying email using setter method
+print(user1.get_email())  # Accessing updated email using getter method
 

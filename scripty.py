@@ -51,7 +51,13 @@ class User:
         self._email = email
         self.password = password
     
+    def get_email(self):
+        return self._email
+    
+    
 
 
-user1 = User("theo", " Theo@gmail.com ", "pass123")
+
+user1 = User("theo", "theo@gmail.com", "pass123")
+print(user1.get_email())  # Accessing email using getter method
 

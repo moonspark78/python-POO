@@ -48,14 +48,14 @@ person3 = Person("Bob", 25)
 class User:
     def __init__(self, username, email, password):
         self.username = username
-        self._email = email
+        self.__email = email
         self.password = password
     
     def get_email(self):
         return self._email
     
     def clean_email(self):
-        return self._email.lower().strip()
+        return self.__email.lower().strip()
     
     def say_hello(self, other_user):
         print(f"Sending message to {other_user.username} : Hi {other_user.username}, it's {self.username}!")
@@ -76,11 +76,6 @@ print(user1.email)   """
 
 """ MAIS ca c'est pas la bbonne facon de faire parce queje peut mettre un no-email adress """
 
-print(user1._email)
+print(user1.__email)
 print(user1.clean_email())
 
-print(user2._email)
-print(user2.clean_email())
-
-
-print(user1.say_hello(user2))

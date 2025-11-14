@@ -58,7 +58,8 @@ class User:
         return self._email
     
     def set_email(self, new_email):
-        self._email = new_email
+        if "@" in new_email:
+            self._email = new_email
 
 
 

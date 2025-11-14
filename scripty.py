@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Dog: 
     def __init__(self, name, breed, owner): 
         self.name = name 
@@ -52,6 +54,7 @@ class User:
         self.password = password
     
     def get_email(self):
+        print(f"Email accessed at {datetime.now()}")
         return self._email
     
     def set_email(self, new_email):

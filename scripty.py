@@ -82,6 +82,7 @@ class Car:
         self.year = year
 
 my_car = Car("Tesla", "Model 3", 2024)
-
+my_car.year = "this is not a year"
+print(my_car.year)
         
 

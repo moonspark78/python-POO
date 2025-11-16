@@ -71,6 +71,7 @@ user1.set_email("eline17@2679")  # Modifying email using setter method
 print(user1.get_email())  # Accessing updated email using getter method
 
 print("test 1")
+print("test 2")
 
 
 

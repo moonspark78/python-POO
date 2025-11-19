@@ -76,10 +76,11 @@ print(user1.get_email())  # Accessing updated email using getter method
 # .2 Properties
 
 class Car:
-    def __init__(self, brand, model, year):
+    def __init__(self, brand, model, year, email):
         self.brand = brand
         self.model = model
         self.year = year
+        self._email = email
 
 my_car = Car("Tesla", "Model 3", 2024)
 my_car.year = "this is not a year"

@@ -64,11 +64,11 @@ class User:
 
 
 
-user1 = User("theo", "theo@gmail.com", "pass123")
-print(user1.get_email())  # Accessing email using getter method
+#user1 = User("theo", "theo@gmail.com", "pass123")
+#print(user1.get_email())  # Accessing email using getter method
 
-user1.set_email("eline17@2679")  # Modifying email using setter method
-print(user1.get_email())  # Accessing updated email using getter method
+#user1.set_email("eline17@2679")  # Modifying email using setter method
+#print(user1.get_email())  # Accessing updated email using getter method
 
 
 
@@ -81,9 +81,12 @@ class Car:
         self.model = model
         self.year = year
         self._email = email
+        
 
-my_car = Car("Tesla", "Model 3", 2024)
-my_car.year = "this is not a year"
-print(my_car.year)
+
+my_car = Car("Tesla", "Model 3", 2024, "tesla@gmail.com")
+print(my_car._email) 
+my_car.email = "this is not a year"
+print(my_car.email)
         
 

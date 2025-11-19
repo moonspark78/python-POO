@@ -82,11 +82,13 @@ class Car:
         self.year = year
         self._email = email
         
-
+    @property
+    def email(self):
+        print(f"Email accessed at {datetime.now()}")
+        return self._email
 
 my_car = Car("Tesla", "Model 3", 2024, "tesla@gmail.com")
-print(my_car._email) 
-my_car.email = "this is not a year"
+#my_car.email = "this is not a year"
 print(my_car.email)
         
 

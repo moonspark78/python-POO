@@ -86,9 +86,13 @@ class Car:
     def email(self):
         print(f"Email accessed at {datetime.now()}")
         return self._email
-
+    
+    @email.setter
+    def email(self, new_email):
+        if "@" in new_email:
+            self._email = new_email
 my_car = Car("Tesla", "Model 3", 2024, "tesla@gmail.com")
-#my_car.email = "this is not a year"
+my_car.email = "this is not a year"
 print(my_car.email)
         
 

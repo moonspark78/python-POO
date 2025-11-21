@@ -97,4 +97,22 @@ my_car.email = "this is not a year"
         
 
 
+
+
 """  ------------- Static. Attributes ------------- """
+# A static attiribute ( sometimes called a class attribute) is an attribute that belongs to the class itself, not to any specific instance of the class.
+
+class User:
+    user_count = 0  # Static attribute to keep track of the number of users
+
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+        User.user_count += 1  # Increment user count when a new user is created
+
+    def display_user(self):
+        print(f"Username: {self.username}, Email: {self.email}")
+        
+# Creating instances of User class
+user1 = User("alice", "alice@gmail.com")
+user2 = User("bob", "bobo@gmail.com")

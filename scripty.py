@@ -116,3 +116,7 @@ class User:
 # Creating instances of User class
 user1 = User("alice", "alice@gmail.com")
 user2 = User("bob", "bobo@gmail.com")
+
+print(f"Total users: {User.user_count}")  # Accessing static attribute via class name
+print(f"Total users: {user1.user_count}")  # Accessing static attribute via instance (not recommended)
+print(f"Total users: {user2.user_count}")  # Accessing static attribute via instance (not recommended)

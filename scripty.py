@@ -120,3 +120,21 @@ user2 = User("bob", "bobo@gmail.com")
 print(f"Total users: {User.user_count}")  # Accessing static attribute via class name
 print(f"Total users: {user1.user_count}")  # Accessing static attribute via instance (not recommended)
 print(f"Total users: {user2.user_count}")  # Accessing static attribute via instance (not recommended)
+
+
+"""  ------------- Static. Methods ------------- """
+# A static method is a method that belongs to the class rather than any specific instance of the class. It does not have access to instance-specific data (i.e., it cannot access self).
+
+class BankAccount:
+    MIN-BALANCE = 100  # Static attribute
+    
+    def __init__(self, onwer, balance=0):
+        self.owner = onwer
+        self._balance = balance
+        
+    def deposit(self, amount):
+        if amount > 0:
+            self._balance += amount
+            print(f"Deposited {amount}. New balance is {self._balance}.")
+        else:
+            print("Deposit amount must be positive.")

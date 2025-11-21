@@ -126,7 +126,7 @@ print(f"Total users: {user2.user_count}")  # Accessing static attribute via inst
 # A static method is a method that belongs to the class rather than any specific instance of the class. It does not have access to instance-specific data (i.e., it cannot access self).
 
 class BankAccount:
-    MIN-BALANCE = 100  # Static attribute
+    MIN_BALANCE = 100  # Static attribute
     
     def __init__(self, onwer, balance=0):
         self.owner = onwer
@@ -138,3 +138,13 @@ class BankAccount:
             print(f"Deposited {amount}. New balance is {self._balance}.")
         else:
             print("Deposit amount must be positive.")
+            
+    @staticmethod
+    def is_valid_interest_rate(rate):
+        return 0 <= rate <= 5  # Valid interest rate is between 0 and 5 (inclusive)
+    
+account = BankAccount("Charlie", 500)
+account.deposit(200)
+
+print(BankAccount.is_valid_interest_rate(3))  # True
+print(BankAccount.is_valid_interest_rate(7))  # False

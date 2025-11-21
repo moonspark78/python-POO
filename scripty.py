@@ -93,6 +93,8 @@ class Car:
             self._email = new_email
 my_car = Car("Tesla", "Model 3", 2024, "tesla@gmail.com")
 my_car.email = "this is not a year"
-print(my_car.email)
+# print(my_car.email)
         
 
+
+"""  ------------- Static. Attributes ------------- """

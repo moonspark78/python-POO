@@ -141,6 +141,10 @@ class BankAccount:
             
     def _is_valid_amount(self, amount):
         return amount > 0
+    
+    def _log_transaction(self, transaction_type, amount):
+        
+    
             
     @staticmethod
     def is_valid_interest_rate(rate):

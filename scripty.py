@@ -139,6 +139,9 @@ class BankAccount:
         else:
             print("Deposit amount must be positive.")
             
+    def _is_valid_amount(self, amount):
+        return amount > 0
+            
     @staticmethod
     def is_valid_interest_rate(rate):
         return 0 <= rate <= 5  # Valid interest rate is between 0 and 5 (inclusive)

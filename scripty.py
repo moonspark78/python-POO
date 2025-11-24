@@ -143,7 +143,7 @@ class BankAccount:
         return amount > 0
     
     def _log_transaction(self, transaction_type, amount):
-        
+        print(f"Logging {transaction_type} of ${amount}. New balence: $ {self._balance}")
     
             
     @staticmethod

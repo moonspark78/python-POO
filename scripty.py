@@ -135,6 +135,7 @@ class BankAccount:
     def deposit(self, amount):
         if amount > 0:
             self._balance += amount
+            self._log_transaction("deposit", amount)
             print(f"Deposited {amount}. New balance is {self._balance}.")
         else:
             print("Deposit amount must be positive.")

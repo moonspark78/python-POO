@@ -143,7 +143,7 @@ class BankAccount:
     def _is_valid_amount(self, amount):
         return amount > 0
     
-    def _log_transaction(self, transaction_type, amount):
+    def __log_transaction(self, transaction_type, amount):
         print(f"Logging {transaction_type} of ${amount}. New balence: $ {self._balance}")
     
             
@@ -153,6 +153,8 @@ class BankAccount:
     
 account = BankAccount("Charlie", 500)
 account.deposit(200)
+
+#account.__log_transaction("withdraw", 300)  # This will raise an AttributeError
 
 print(BankAccount.is_valid_interest_rate(3))  # True
 print(BankAccount.is_valid_interest_rate(7))  # False

@@ -158,3 +158,4 @@ account.deposit(200)
 
 print(BankAccount.is_valid_interest_rate(3))  # True
 print(BankAccount.is_valid_interest_rate(7))  # False
+print(account.is_valid_interest_rate(4))  # True (can also be called on an instance, but not recommended)

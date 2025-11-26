@@ -159,3 +159,12 @@ account.deposit(200)
 print(BankAccount.is_valid_interest_rate(3))  # True
 print(BankAccount.is_valid_interest_rate(7))  # False
 print(account.is_valid_interest_rate(4))  # True (can also be called on an instance, but not recommended)
+
+"""  ------------- Class Methods ------------- """
+# A class method is a method that is bound to the class and not the instance of the
+
+class Temperature:
+    def __init__(self, celsius):
+        self.celsius = celsius
+        
+    

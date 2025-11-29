@@ -216,17 +216,23 @@ test_account.withdraw(1)
 """ ------------- Absraction ------------- """
 class EmailService:
     
-    def _connect(self):
+    def connect(self):
         print("Connecting to email server...")
     
-    def _authenticate(self):
+    def authenticate(self):
         print("Authenticating...")
         
     def send_email(self):
-        self._connect()
-        self._authenticate()
+        self.connect()
+        self.authenticate()
         print("Sending email...")
+        self.disconnect()
         
-    def _disconnect(self):
+    def disconnect(self):
         print("Disconnecting from email server...")
 
+email = EmailService()
+email.connect()
+email.authenticate()
+email.send_email()
+email.disconnect()

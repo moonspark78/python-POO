@@ -179,9 +179,9 @@ class BadBankAccount:
         self.balance = balance
         
 
-account = BadBankAccount(0.0)
-account.balance = -1
-print(f"BadBankAccount balance: {account.balance}")  # Output: -1 (invalid state)
+#account = BadBankAccount(0.0)
+#account.balance = -1
+#print(f"BadBankAccount balance: {account.balance}")  # Output: -1 (invalid state)
 
 class GoodBankAccount:
     def __init__(self):
@@ -202,3 +202,11 @@ class GoodBankAccount:
             self._balance -= amount
         else:
             print("Invalid withdrawal amount.")
+            
+
+test_account = GoodBankAccount()
+print(test_account.balance)  
+test_account.deposit(1.99)
+print(test_account.balance) 
+test_account.withdraw(1)
+print(test_account.balance)

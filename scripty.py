@@ -263,24 +263,33 @@ class Car(Vehicle):
         self.nb_wheels = nb_wheels
         self.nb_doors = nb_doors
 
-class Bike(Vehicle):
+class Motorcycle(Vehicle):
     def __init__(self, brand, model, year, nb_wheels):
         super().__init__(brand, model, year)
         self.nb_wheels = nb_wheels
         
         
+        
+        
+        
 car =Car("Toyota", "Camry", 2020, 5, 4)
-bike = Bike("Yamaha", "YZF-R3", 2021, 2)
+bike = Motorcycle("Yamaha", "YZF-R3", 2021, 2)
 print(car.__dict__)
 print(bike.__dict__)
 car.start()
 bike.start()
 
-        
-        
-        
+# Creating instances of Car and Bike
+vehicles= [
+    Car("Honda", "Civic", 2019, 4, 4),
+    Motorcycle("Ducati", "Panigale V4", 2022, 2)
+]
 
-
-        
-
-
+#Looping through the list and calling start method
+for vehicle in vehicles:
+    if isinstance(vehicle, Car):
+        print(f"Inspecting Car: {vehicle.brand} {vehicle.model} ({type(vehicle).__name__})")
+        vehicle.start()
+    elif isinstance(vehicle, Motorcycle):
+        print(f"Inspecting Motorcycle: {vehicle.brand} {vehicle.model} ({type(vehicle).__name__})")
+        vehicle.start()

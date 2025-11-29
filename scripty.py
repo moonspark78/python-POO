@@ -231,8 +231,14 @@ class EmailService:
     def disconnect(self):
         print("Disconnecting from email server...")
 
-email = EmailService()
-email.connect()
-email.authenticate()
-email.send_email()
-email.disconnect()
+#email = EmailService()
+#email.connect()
+#email.authenticate()
+#email.send_email()
+#email.disconnect()
+
+
+""" ------------- Inheritance ------------- """
+""" Inheritance allows a class (called a subclass or derived class) to inherit
+    attributes and methods from another class (called a superclass or base class).
+    This promotes code reusability and establishes a hierarchical relationship between classes. """

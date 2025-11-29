@@ -205,8 +205,10 @@ class GoodBankAccount:
             
 
 test_account = GoodBankAccount()
-print(test_account.balance)  
+#print(test_account.balance)  
 test_account.deposit(1.99)
-print(test_account.balance) 
+#print(test_account.balance) 
 test_account.withdraw(1)
-print(test_account.balance)
+#print(test_account.balance)
+
+

@@ -117,9 +117,9 @@ class User:
 user1 = User("alice", "alice@gmail.com")
 user2 = User("bob", "bobo@gmail.com")
 
-print(f"Total users: {User.user_count}")  # Accessing static attribute via class name
-print(f"Total users: {user1.user_count}")  # Accessing static attribute via instance (not recommended)
-print(f"Total users: {user2.user_count}")  # Accessing static attribute via instance (not recommended)
+# print(f"Total users: {User.user_count}")  # Accessing static attribute via class name
+# print(f"Total users: {user1.user_count}")  # Accessing static attribute via instance (not recommended)
+# print(f"Total users: {user2.user_count}")  # Accessing static attribute via instance (not recommended)
 
 
 """  ------------- Static. Methods ------------- """
@@ -151,12 +151,12 @@ class BankAccount:
     def is_valid_interest_rate(rate):
         return 0 <= rate <= 5  # Valid interest rate is between 0 and 5 (inclusive)
     
-account = BankAccount("Charlie", 500)
-account.deposit(200)
+# account = BankAccount("Charlie", 500)
+# account.deposit(200)
 
 #account.__log_transaction("withdraw", 300)  # This will raise an AttributeError
 
-print(BankAccount.is_valid_interest_rate(3))  # True
-print(BankAccount.is_valid_interest_rate(7))  # False
-print(account.is_valid_interest_rate(4))  # True (can also be called on an instance, but not recommended)
+# print(BankAccount.is_valid_interest_rate(3))  # True
+# print(BankAccount.is_valid_interest_rate(7))  # False
+# print(account.is_valid_interest_rate(4))  # True (can also be called on an instance, but not recommended)
 

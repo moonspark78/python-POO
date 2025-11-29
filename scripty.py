@@ -186,3 +186,19 @@ print(f"BadBankAccount balance: {account.balance}")  # Output: -1 (invalid state
 class GoodBankAccount:
     def __init__(self):
         self._balance = 0.0  # Private attribute
+        
+    @property
+    def balance(self):
+        return self._balance
+    
+    def deposit(self, amount):
+        if amount > 0:
+            self._balance += amount
+        else:
+            print("Deposit amount must be positive.")
+            
+    def withdraw(self, amount):
+        if 0 < amount <= self._balance:
+            self._balance -= amount
+        else:
+            print("Invalid withdrawal amount.")

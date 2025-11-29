@@ -160,3 +160,16 @@ class BankAccount:
 # print(BankAccount.is_valid_interest_rate(7))  # False
 # print(account.is_valid_interest_rate(4))  # True (can also be called on an instance, but not recommended)
 
+
+
+
+""" ------------- Encapsulation ------------- """
+
+""" 
+Encapsulation provides several benefits:
+
+        Data Protection: Prevents accidental modification of data
+        Validation: You can validate data before setting it
+        Flexibility: Internal implementation can change without affecting external code
+        Control: You have full control over how data is accessed and modified
+"""

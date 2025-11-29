@@ -242,3 +242,10 @@ class EmailService:
 """ Inheritance allows a class (called a subclass or derived class) to inherit
     attributes and methods from another class (called a superclass or base class).
     This promotes code reusability and establishes a hierarchical relationship between classes. """
+    
+    
+class Vehicle:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year

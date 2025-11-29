@@ -173,3 +173,16 @@ Encapsulation provides several benefits:
         Flexibility: Internal implementation can change without affecting external code
         Control: You have full control over how data is accessed and modified
 """
+
+class BadBankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+        
+
+account = BadBankAccount(0.0)
+account.balance = -1
+print(f"BadBankAccount balance: {account.balance}")  # Output: -1 (invalid state)
+
+class GoodBankAccount:
+    def __init__(self):
+        self._balance = 0.0  # Private attribute

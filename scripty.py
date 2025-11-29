@@ -249,3 +249,38 @@ class Vehicle:
         self.brand = brand
         self.model = model
         self.year = year
+    
+    def start(self):
+        print("vehicle is started.")
+
+    def stop(self):
+        print("vehicle is stopped.")
+        
+        
+class Car(Vehicle):
+    def __init__(self, brand, model, year, nb_wheels, nb_doors):
+        super().__init__(brand, model, year)
+        self.nb_wheels = nb_wheels
+        self.nb_doors = nb_doors
+
+class Bike(Vehicle):
+    def __init__(self, brand, model, year, nb_wheels):
+        super().__init__(brand, model, year)
+        self.nb_wheels = nb_wheels
+        
+        
+car =Car("Toyota", "Camry", 2020, 5, 4)
+bike = Bike("Yamaha", "YZF-R3", 2021, 2)
+print(car.__dict__)
+print(bike.__dict__)
+car.start()
+bike.start()
+
+        
+        
+        
+
+
+        
+
+
